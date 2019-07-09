@@ -23,13 +23,13 @@ set('allow_anonymous_stats', false);
 // Hosts
 host('library')
   ->hostname('46.101.52.142')
-  ->user('library')
+  ->user('root')
   ->set('branch', 'master')
   ->identityFile('~/.ssh/id_rsa')
   ->set('deploy_path', '/var/www/html/library');
 
 task('build', function () {
-  run('cd ' . __DIR__ . '&& npm install && npm run build');
+  run('cd ' . __DIR__ . '&& npm install && npm run build && ');
 })->local();
 
 task('upload', function () {
@@ -54,7 +54,7 @@ task('deploy', [
   'deploy:writable',
   'build',
   'upload',
-  'deploy:vendors',
+//  'deploy:vendors',
   'deploy:clear_paths',
   'deploy:symlink',
   'deploy:owner',
