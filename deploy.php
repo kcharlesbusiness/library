@@ -29,7 +29,7 @@ host('library')
   ->set('deploy_path', '/var/www/html/library');
 
 task('build', function () {
-  run('cd ' . __DIR__ . '&& npm install && npm run build && npm start');
+  run('cd ' . __DIR__ . '&& npm install && npm run build');
 })->local();
 
 task('upload', function () {
@@ -38,6 +38,10 @@ task('upload', function () {
 
 task('deploy:owner', function () {
   run('chown -R www-data:www-data /var/www');
+});
+
+task('server:start', function(){
+  run('cd /var/www/html/library/current && npm start');
 });
     
 
@@ -54,7 +58,7 @@ task('deploy', [
   'deploy:writable',
   'build',
   'upload',
-//  'deploy:vendors',
+  'server:start',
   'deploy:clear_paths',
   'deploy:symlink',
   'deploy:owner',
