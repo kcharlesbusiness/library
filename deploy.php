@@ -23,7 +23,7 @@ set('allow_anonymous_stats', false);
 // Hosts
 host('library')
   ->hostname('46.101.52.142')
-  ->user('root')
+  ->user('library')
   ->set('branch', 'master')
   ->identityFile('~/.ssh/id_rsa')
   ->set('deploy_path', '/var/www/html/library');
