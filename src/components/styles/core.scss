@@ -1,0 +1,23 @@
+// Imports
+@import "variables";
+
+.bm {
+  background-color: $color-one;
+  min-height: 100vh;
+  padding-top: 52px;
+  display: flex;
+  flex-flow: column;
+
+  &--header {
+    position: fixed;
+    background-color: $color-two;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 20px;
+
+    a {
+      color: #fff;
+    }
+  }
+}

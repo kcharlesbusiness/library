@@ -4,7 +4,7 @@ import { Route, Switch } from "react-router";
 // Core
 import Header from './Header';
 import Footer from './Footer';
-import './core.scss';
+import './styles/core.scss';
 
 // Components
 import ElementList from './ElementList';
@@ -14,7 +14,7 @@ import ElementDetail from './ElementDetail';
 class App extends Component {
   render(){
     return (
-      <div>
+      <div className="bm">
         <Header />
         <Switch>
           <Route exact path="/" component={ElementList} />

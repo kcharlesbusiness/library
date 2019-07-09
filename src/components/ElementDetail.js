@@ -4,6 +4,8 @@ import { graphql } from "react-apollo";
 import fetchElement from './queries/fetchElement';
 import Sidebar from './sidebar/SidebarElementList';
 
+import './styles/elementDetail.scss';
+
 class ElementDetail extends Component {
   render() {
     const { element, loading } = this.props.data;
@@ -12,9 +14,11 @@ class ElementDetail extends Component {
 
     return (
       <div className="element--detail">
-        <Sidebar currentElement={element.id}/>
-        <div>
-          <h2>{element.title}</h2>
+        <div className="element--detail__sidebar">
+          <Sidebar className="" currentElement={element.id}/>
+        </div>
+        <div className="element--detail__content">
+          <h1>{element.title}</h1>
         </div>
       </div>
     );

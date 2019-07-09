@@ -2,6 +2,16 @@ import {Link} from "react-router-dom";
 import React from "react";
 
 /**
+ * @param props
+ * @param id
+ * @returns {Promise<ApolloQueryResult<TData> | ApolloQueryResult<T> | never>}
+ */
+function onSongDelete(props, id){
+  return props.mutate({ variables: {id} })
+    .then(() => props.data.refetch());
+}
+
+/**
  * Render All Elements
  * @param props
  * @param isSidebar
@@ -20,7 +30,7 @@ export function renderElements(props, isSidebar = false){
     return (
       <li className="collection-item" key={id}>
         <Link to={`/elements/${id}`}>{title}</Link>
-        <i className="material-icons right" onClick={() => this.onSongDelete(id)}>delete</i>
+        <i className="material-icons right" onClick={() => onSongDelete(props, id)}>delete</i>
       </li>
     )
   });

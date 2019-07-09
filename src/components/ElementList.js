@@ -6,6 +6,8 @@ import fetchElements from './queries/fetchElements';
 import deleteElement from './mutations/deleteElement';
 import { renderElements } from './renderMethods';
 
+import './styles/elementList.scss';
+
 class ElementList extends Component {
   onSongDelete(id){
     return this.props.mutate({ variables: {id} })
@@ -16,7 +18,7 @@ class ElementList extends Component {
     if( this.props.data.loading === true ) return <div>Loading...</div>;
 
     return(
-      <div>
+      <div className="bm--list">
         <h1>Element List</h1>
         <ul className="collection">
           {renderElements(this.props)}
@@ -26,8 +28,6 @@ class ElementList extends Component {
     )
   }
 }
-
-
 
 export default
   graphql(deleteElement)(
