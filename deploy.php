@@ -29,7 +29,7 @@ host('library')
   ->set('deploy_path', '/var/www/html/library');
 
 task('build', function () {
-  run('cd ' . __DIR__ . '&& npm install && npm run build');
+  run('cd ' . __DIR__ . '&& npm install');
 })->local();
 
 task('upload', function () {
@@ -41,7 +41,7 @@ task('deploy:owner', function () {
 });
 
 task('server:start', function(){
-  run('cd /var/www/html/library/current && npm start');
+  run('cd /var/www/html/library/current && npm run dev');
 });
     
 
