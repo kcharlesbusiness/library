@@ -24,7 +24,7 @@ set('allow_anonymous_stats', false);
 host('library')
   ->hostname('46.101.52.142')
   ->user('root')
-  ->set('branch', 'master')
+  ->set('branch', 'develop')
   ->identityFile('~/.ssh/id_rsa')
   ->set('deploy_path', '/var/www/html/library');
 
