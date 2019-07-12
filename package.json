@@ -42,6 +42,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "dev": "nodemon index.js --ignore client"
+    "dev": "nodemon index.js --ignore client",
+    "watch:server": "nodemon --watch src/server src/server"
   }
 }

@@ -41,7 +41,7 @@ task('deploy:owner', function () {
 });
 
 task('server:start', function(){
-  run('cd /var/www/html/library/current && npm run dev');
+  run('cd /var/www/html/library/current && npm run watch:server');
 });
     
 
