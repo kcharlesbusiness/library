@@ -18,7 +18,9 @@ class ElementDetail extends Component {
           <Sidebar className="" currentElement={element.id}/>
         </div>
         <div className="element--detail__content">
-          <h1>{element.title}</h1>
+          <div className="element--detail__content--title">
+            <h1>{element.title}</h1>
+          </div>
         </div>
       </div>
     );

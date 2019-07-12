@@ -1,4 +1,4 @@
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import React from "react";
 
 /**
@@ -22,14 +22,14 @@ export function renderElements(props, isSidebar = false){
     if( isSidebar ){
       return (
         <li className="collection-item" key={id}>
-          <Link to={`/elements/${id}`}>{title}</Link>
+          <NavLink to={`/elements/${id}`} activeClassName="active">{title}</NavLink>
         </li>
       );
     }
 
     return (
       <li className="collection-item" key={id}>
-        <Link to={`/elements/${id}`}>{title}</Link>
+        <NavLink to={`/elements/${id}`} activeClassName="active">{title}</NavLink>
         <i className="material-icons right" onClick={() => onSongDelete(props, id)}>delete</i>
       </li>
     )

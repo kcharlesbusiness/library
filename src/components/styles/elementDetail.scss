@@ -23,7 +23,8 @@
           display: block;
 
 
-          &:hover {
+          &:hover,
+          &.active {
             background-color: $color-five;
           }
         }
@@ -34,10 +35,14 @@
   &__content {
     flex: 2 85%;
     background-color: $color-two;
-    padding: 3.5rem 2.5rem;
 
-    h1 {
-      color: $color-white;
+    &--title {
+      padding: 3.5rem 2.5rem;
+      background-color: $color-one;
+
+      h1 {
+        color: $color-white;
+      }
     }
   }
 }
