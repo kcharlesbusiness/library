@@ -58,12 +58,12 @@ task('deploy', [
   'deploy:writable',
   'build',
   'upload',
-  'server:start',
   'deploy:clear_paths',
   'deploy:symlink',
   'deploy:owner',
   'deploy:unlock',
   'cleanup',
+  'server:start',
   'success'
 ]);
 
