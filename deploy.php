@@ -45,7 +45,7 @@ task('deploy:owner', function () {
 });
 
 task('server:start', function(){
-  run('cd {{release_path}}/ && npm run dev');
+  run('cd {{release_path}}/ && npm run dev', ['timeout' => 15]);
 });
     
 
