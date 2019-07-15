@@ -14,7 +14,7 @@ set('git_tty', true);
 
 // Shared files/dirs between deploys 
 set('shared_files', ['.env']);
-set('shared_dirs', ['node_modules']);
+set('shared_dirs', []);
 
 // Writable dirs by web server 
 set('writable_dirs', []);
@@ -66,7 +66,7 @@ task('deploy', [
   'deploy:owner',
   'deploy:unlock',
   'cleanup',
-  'upload',
+//  'upload',
   'success'
 ]);
 
