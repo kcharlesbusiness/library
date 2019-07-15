@@ -32,12 +32,12 @@ task('build', function () {
   run('cd ' . __DIR__ . '&& npm install');
 })->local();
 
-//task('upload', function () {
-//  upload(__DIR__ . "/node_modules", '{{release_path}}/');
-//});
+task('upload', function () {
+  upload(__DIR__ . "/node_modules", '{{release_path}}/');
+});
 
-task('upload', function(){
-  run('scp -r node_modules/ root@karlcharles.co.uk:/var/www/html/library/current');
+task('npm-install', function(){
+  run('cd {{release_path}} && npm install');
 });
 
 task('deploy:owner', function () {
@@ -45,7 +45,7 @@ task('deploy:owner', function () {
 });
 
 task('server:start', function(){
-  run('cd {{release_path}}/ && cat index.js');
+  run('cd {{release_path}}/ && npm run dev');
 });
     
 
@@ -66,7 +66,8 @@ task('deploy', [
   'deploy:owner',
   'deploy:unlock',
   'cleanup',
-//  'upload',
+  'npm-install',
+  'server:start',
   'success'
 ]);
 
