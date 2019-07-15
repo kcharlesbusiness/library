@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="228848c6-171b-4b4e-9f25-c95cb22c7f51" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deploy.php" beforeDir="false" afterPath="$PROJECT_DIR$/deploy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/element.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/schema/element_type.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/schema/element_type.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/schema/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/schema/mutations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/schema/root_query_type.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/schema/root_query_type.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ElementCreate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ElementCreate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ElementDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ElementDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ElementList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ElementList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/mutations/addElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/mutations/addElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/queries/fetchElement.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queries/fetchElement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/queries/fetchElements.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/queries/fetchElements.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/renderMethods/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/renderMethods/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,11 +39,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/deploy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="164">
+            <state relative-caret-position="114">
               <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -111,19 +102,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#135#176#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -147,7 +125,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/public/.htaccess" />
         <option value="$PROJECT_DIR$/server.js" />
         <option value="$PROJECT_DIR$/.babelrc" />
@@ -188,6 +165,7 @@
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/.env.development" />
         <option value="$PROJECT_DIR$/deploy.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -327,12 +305,12 @@
       <updated>1562627879765</updated>
       <workItem from="1562627881344" duration="2462000" />
       <workItem from="1562695833920" duration="13280000" />
-      <workItem from="1563179700756" duration="6428000" />
+      <workItem from="1563179700756" duration="6554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49590000" />
+    <option name="totallyTimeSpent" value="49716000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="984" extended-state="6" />
@@ -396,7 +374,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.test.js" />
     <entry file="file://$PROJECT_DIR$/.babelrc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -743,8 +720,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
+        <state relative-caret-position="114">
           <caret line="40" column="3" lean-forward="true" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
         </state>
       </provider>
     </entry>
