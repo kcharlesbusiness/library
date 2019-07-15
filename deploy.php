@@ -45,7 +45,9 @@ task('deploy:owner', function () {
 });
 
 task('server:start', function(){
-  run('cd {{release_path}}/ && npm run dev', ['timeout' => 15]);
+  run('killall node');
+  cd('{{release_path}}');
+  run('npm run dev', ['timeout' => 15]);
 });
     
 
