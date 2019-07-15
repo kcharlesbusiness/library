@@ -1,4 +1,4 @@
-require('custom-env').env('development');
+require('custom-env').env(true);
 
 const app = require('./server/server');
 

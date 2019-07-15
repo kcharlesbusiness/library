@@ -13,8 +13,8 @@ set('repository', 'https://github.com/kcharlesbusiness/library.git');
 set('git_tty', true); 
 
 // Shared files/dirs between deploys 
-set('shared_files', []);
-set('shared_dirs', []);
+set('shared_files', ['.env']);
+set('shared_dirs', ['node_modules']);
 
 // Writable dirs by web server 
 set('writable_dirs', []);
