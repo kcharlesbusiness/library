@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="228848c6-171b-4b4e-9f25-c95cb22c7f51" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/deploy.php" beforeDir="false" afterPath="$PROJECT_DIR$/deploy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/deploy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+            <state relative-caret-position="452">
+              <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -306,18 +305,18 @@
       <updated>1562627879765</updated>
       <workItem from="1562627881344" duration="2462000" />
       <workItem from="1562695833920" duration="13280000" />
-      <workItem from="1563179700756" duration="7169000" />
+      <workItem from="1563179700756" duration="7482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50331000" />
+    <option name="totallyTimeSpent" value="50644000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="984" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21306472" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21306472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -330,7 +329,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295964" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.19730942" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.19730942" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="GraphQL" order="12" weight="0.3295964" />
       <window_info anchor="bottom" id="TypeScript" order="13" />
@@ -728,8 +727,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deploy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+        <state relative-caret-position="452">
+          <caret line="60" column="13" lean-forward="true" selection-start-line="60" selection-start-column="13" selection-end-line="60" selection-end-column="13" />
         </state>
       </provider>
     </entry>

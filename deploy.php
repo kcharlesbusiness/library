@@ -57,7 +57,7 @@ task('deploy', [
   'deploy:shared',
   'deploy:writable',
   'build',
-  'upload',
+//  'upload',
   'deploy:clear_paths',
   'deploy:symlink',
   'deploy:owner',
