@@ -4,7 +4,6 @@ const graphql = require('graphql');
 const {
   GraphQLObjectType,
   GraphQLID,
-  GraphQLInt,
   GraphQLString
 } = graphql;
 
@@ -12,6 +11,7 @@ const ElementType = new GraphQLObjectType({
   name:  'ElementType',
   fields: () => ({
     id: { type: GraphQLID },
+    slug: { type: GraphQLString },
     description: { type: GraphQLString },
     title: { type: GraphQLString }
   })

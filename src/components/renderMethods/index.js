@@ -1,4 +1,4 @@
-import {NavLink} from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import React from "react";
 
 /**
@@ -18,19 +18,30 @@ function onSongDelete(props, id){
  * @returns {*}
  */
 export function renderElements(props, isSidebar = false){
-  return props.data.elements.map(({id, title}) => {
+
+  return props.data.elements.map(({id, title, slug}) => {
     if( isSidebar ){
       return (
         <li className="collection-item" key={id}>
-          <NavLink to={`/elements/${id}`} activeClassName="active">{title}</NavLink>
+          <NavLink to={{
+            pathname: `/elements/${slug}`,
+            state: {
+              id: id
+            }
+          }} activeClassName="active">{title}</NavLink>
         </li>
       );
     }
 
     return (
       <li className="collection-item" key={id}>
-        <NavLink to={`/elements/${id}`} activeClassName="active">{title}</NavLink>
-        <i className="material-icons right" onClick={() => onSongDelete(props, id)}>delete</i>
+        <NavLink to={{
+          pathname: `/elements/${slug}`,
+          state: {
+            id: id
+          }
+        }} activeClassName="active">{title}</NavLink>
+        <i className="material-icons right" onClick={() => onSongDelete(props, id)}>Delete</i>
       </li>
     )
   });

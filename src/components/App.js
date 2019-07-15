@@ -19,7 +19,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={ElementList} />
           <Route path="/elements/new" component={ElementCreate} />
-          <Route path="/elements/:id" component={ElementDetail} />
+          <Route path="/elements/:slug" component={ElementDetail} />
           <Route component={ElementList} />
         </Switch>
         <Footer />

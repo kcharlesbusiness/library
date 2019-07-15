@@ -12,6 +12,7 @@
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.19.0",
     "css-loader": "^3.0.0",
+    "custom-env": "^1.0.2",
     "express": "^4.17.1",
     "express-graphql": "^0.8.0",
     "express-session": "^1.16.2",

@@ -41,7 +41,7 @@ task('deploy:owner', function () {
 });
 
 task('server:start', function(){
-  run('cd /var/www/html/library/current && npm run watch:server');
+  run('cd {{release_path}}/ && cat index.js');
 });
     
 
@@ -63,7 +63,7 @@ task('deploy', [
   'deploy:owner',
   'deploy:unlock',
   'cleanup',
-  'server:start',
+//  'server:start',
   'success'
 ]);
 

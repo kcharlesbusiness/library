@@ -3,7 +3,8 @@ const Schema = mongoose.Schema;
 
 const ElementSchema = new Schema({
   title: { type: String },
-  description: { type: String }
+  description: { type: String },
+  slug: { type: String }
 });
 
 ElementSchema.statics.editDescription = (id, description) => {

@@ -10,6 +10,8 @@ class ElementDetail extends Component {
   render() {
     const { element, loading } = this.props.data;
 
+    console.log(this.props);
+
     if( loading ) return <div className="container">Loading...</div>;
 
     return (
@@ -21,6 +23,14 @@ class ElementDetail extends Component {
           <div className="element--detail__content--title">
             <h1>{element.title}</h1>
           </div>
+          <div className="element--detail__content--nav">
+
+          </div>
+
+          <div className="element--detail__content--live">
+            <div className="element--detail__content--live__example"></div>
+            <div className="element--detail__content--live__code"></div>
+          </div>
         </div>
       </div>
     );
@@ -31,7 +41,7 @@ export default graphql(fetchElement, {
   options: (props) => {
     return {
       variables: {
-        id: props.match.params.id
+        id: props.location.state.id
       }
     }
   }

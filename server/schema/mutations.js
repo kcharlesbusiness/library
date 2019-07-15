@@ -11,10 +11,11 @@ const mutation = new GraphQLObjectType({
       type: ElementType,
       args: {
         title: { type: GraphQLString },
+        slug: { type: GraphQLString },
         description: { type: GraphQLString }
       },
-      resolve(parentValue, { title, description }) {
-        return (new Element({ title, description })).save()
+      resolve(parentValue, { title, description, slug }) {
+        return (new Element({ title, description, slug })).save()
       }
     },
     deleteElement: {

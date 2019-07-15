@@ -9,11 +9,6 @@ import { renderElements } from './renderMethods';
 import './styles/elementList.scss';
 
 class ElementList extends Component {
-  onSongDelete(id){
-    return this.props.mutate({ variables: {id} })
-      .then(() => this.props.data.refetch());
-  }
-
   render(){
     if( this.props.data.loading === true ) return <div>Loading...</div>;
 

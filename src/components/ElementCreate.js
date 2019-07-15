@@ -15,8 +15,14 @@ class ElementCreate extends Component {
   onSubmit(event){
     event.preventDefault();
 
+    let slug = this.state.title.toLowerCase()
+      .replace(' ', '-');
+
     return this.props.mutate({
-      variables: { title: this.state.title },
+      variables: {
+        title: this.state.title,
+        slug: slug
+      },
       refetchQueries: [{ query: fetchElements }]
     }).then(() => this.props.history.push('/'));
   }

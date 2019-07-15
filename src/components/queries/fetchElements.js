@@ -4,6 +4,7 @@ export default gql`
     {
         elements {
             id
+            slug
             title
         }
     }
