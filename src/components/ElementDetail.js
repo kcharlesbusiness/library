@@ -7,10 +7,14 @@ import Sidebar from './sidebar/SidebarElementList';
 import './styles/elementDetail.scss';
 
 class ElementDetail extends Component {
-  render() {
-    const { element, loading } = this.props.data;
+  constructor(props){
+    super(props);
+  }
 
+  render() {
     console.log(this.props);
+
+    const { element, loading } = this.props.data;
 
     if( loading ) return <div className="container">Loading...</div>;
 
@@ -41,7 +45,7 @@ export default graphql(fetchElement, {
   options: (props) => {
     return {
       variables: {
-        id: props.location.state.id
+        id: props.match.params.id
       }
     }
   }

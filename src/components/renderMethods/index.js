@@ -24,9 +24,9 @@ export function renderElements(props, isSidebar = false){
       return (
         <li className="collection-item" key={id}>
           <NavLink to={{
-            pathname: `/elements/${slug}`,
+            pathname: `/elements/${id}`,
             state: {
-              id: id
+              slug
             }
           }} activeClassName="active">{title}</NavLink>
         </li>
@@ -36,9 +36,9 @@ export function renderElements(props, isSidebar = false){
     return (
       <li className="collection-item" key={id}>
         <NavLink to={{
-          pathname: `/elements/${slug}`,
+          pathname: `/elements/${id}`,
           state: {
-            id: id
+            slug
           }
         }} activeClassName="active">{title}</NavLink>
         <i className="material-icons right" onClick={() => onSongDelete(props, id)}>Delete</i>

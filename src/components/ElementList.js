@@ -12,6 +12,8 @@ class ElementList extends Component {
   render(){
     if( this.props.data.loading === true ) return <div>Loading...</div>;
 
+    console.log(this.props);
+
     return(
       <div className="bm--list">
         <h1>Element List</h1>

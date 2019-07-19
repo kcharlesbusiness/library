@@ -17,7 +17,7 @@ const RootQuery = new GraphQLObjectType({
       type: ElementType,
       args: { id: { type: new GraphQLNonNull(GraphQLID) } },
       resolve(parentValue, { id }) {
-        return Element.findById(id);
+        return Element.findById(id)
       }
     }
   })

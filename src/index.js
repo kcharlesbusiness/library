@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import { Router, Route, hashHistory, IndexRoute } from 'react-router';
-import ApolloClient from 'apollo-client';
+import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from 'react-apollo';
 import { HashRouter } from "react-router-dom";
 
-const client = new ApolloClient({});
-
-// import ElementList from './components/ElementList';
 import App from './components/App';
 
+const client = new ApolloClient({});
 const Root = () => {
   return (
     <ApolloProvider client={client}>

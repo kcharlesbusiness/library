@@ -12,6 +12,12 @@ import ElementCreate from './ElementCreate';
 import ElementDetail from './ElementDetail';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+
+    // this.state = { currentElement: null }
+  }
+
   render(){
     return (
       <div className="bm">
@@ -19,7 +25,7 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={ElementList} />
           <Route path="/elements/new" component={ElementCreate} />
-          <Route path="/elements/:slug" component={ElementDetail} />
+          <Route path="/elements/:id" component={ElementDetail} />
           <Route component={ElementList} />
         </Switch>
         <Footer />
